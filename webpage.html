@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Navbar</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+	.sidenav{
+		background-color:lightgrey;
+		padding:20px;
+		margin-top: 80px;
+	}
+	#sss a:hover{
+		background-color:orange;
+		color:yellow;
+	}
+	a:hover{
+	background-color:pink;
+	}
+	.dpn{
+	position:relative;
+	}
+.dpc{
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	position:absolute;
+	top:0;
+	left:160px;
+	
+}
+
+.dpc a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dpc a:hover {background-color: lightgrey;
+
+}
+.dpn:hover .dpc {
+    display: block;
+}
+.dpn:hover .dropbtn {
+    background-color: #3e8e41;
+}
+footer{
+background-color:black;
+color:white;
+text-align:center;
+height:60px;
+}
+
+sub{
+horizontal-align:sub;
+float:right;
+margin-top:15px;
+}
+footer{
+	margin-top:80px;
+}
+#mywebpage ul li a:hover{
+background-color:orange;
+}
+#mywebpage ul li a:active{
+background-color:purple;
+}
+#fff{margin-left:80px;
+
+}
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid" >
+		<div class="navbar-header" id="sss">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mywebpage">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<img src="scn.jpg" class="navbar-brand" style="width:90px";height="90px;">
+			<a class="navbar-brand" href="#">Sachin Sports</a>
+		</div>
+		<div class="collapse navbar-collapse" id="mywebpage">
+			<ul class="nav navbar-nav">
+				<li class="active" style="color:green;"><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li class="dropdown"><a class="dropdown-toggle" href="#" id="g"data-toggle="dropdown">Products<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="#">Football</a></li>
+						<li><a href="#">Vollyball</a></li>
+						<li class="dpn">
+							<a href="#">IndoorGames<span class="caret"></span></a>
+							<div class="dpc">
+								<a href="#">Carems</a>
+								<a href="#">Chess</a>
+								<a href="#">Housey</a>
+							</div>
+						</li>
+						<li><a href="#">Cricket</a></li>
+						<li><a href="#">Tennis</a></li>
+						<li><a href="#">Batmenten</a></li>
+						<li><a href="#">GYM Equipments</a></li>
+					</ul>
+				</li>
+				<li><a href="#Contact">Contact</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container-fluid text-center">
+<div class="row content">
+	<div class="col-sm-2 sidenav">
+		<p><a href="http://www.zonalinfo.com/shopinfo/vijayawada/sports-center/anto-sachin-sports/2767767"target="_blank">Sachin Sports</a></p>
+		<p><a href="https://www.cricbuzz.com"target="_blank">Cricket</a></p>
+		<p><a href="http://www.10dial.com/vijayawada/product/?bth=Anto-Sachin-Sports,labbipet,514176600" target="_blank">Profile</a></p>
+	</div>
+	<div class="col-sm-6 text-left">
+		<h1>Sachin Sports</h1>
+		<h3>About</h3>
+			<blockquote>Hii every one this <mark><abbr title="Owner of Sachin Sports"><strong>kishore pudota</strong></abbr></mark>owner of sachin sports and body maxx which is a unit of sachin sports IN body maxx we manufacture all GYM equip ments.....</blockquote>
+		<h3>Products</h3>
+			<blockquote>cricket items,footballs,baseball items,volley balls,tennis,batmainton,gym items,cricket nets,basket ball courts,children play equipments..etc...</blockquote>
+	</div>
+<div class="col-sm-4 side nav">
+		
+		<img src="kishore.jpg" style="width:400px; height:200px;" alt="Kishore Poodota"/> <br>
+		
+		<iframe width="400" height="200" src="https://www.youtube.com/embed/hKVr73RPrn0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+	<footer>
+		<p>Anto Sachin Sports, sachinsports634@gmail.com</p>
+		<p id="fff">Copyright &copy; 2018 <sub>Developed by <i><b>Srilatha</b></i></sub></p>
+	</footer>
+</body>
+</html>
