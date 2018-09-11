@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BS4 Nav </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="container">
+		<h3>Tabs with dropdown</h3>	
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link active" href="#">HTML</a></li>
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">CSS</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Styles</a>
+						<a class="dropdown-item" href="#">Animations</a>
+					</div>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" href="#">JS</a>						
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" href="#">JQuery</a>						
+			</li>		
+		</ul>
+	</div>
+	<h3>Pills with dropdown</h3>	
+	<ul class="nav nav-pills">
+		<li class="nav-item">
+			<a class="nav-link" href="#">HTML</a></li>
+			<li class="nav-item dropdown">
+			<a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#">CSS</a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Styles</a>				
+					<a class="dropdown-item" href="#">Animations</a>				
+				</div>
+			</li>
+			<li class="nav-item">
+			<a class="nav-link" href="#">JS</a>						
+		</li>
+		<li class="nav-item">
+			<a class="nav-link disabled" href="#">JQuery</a>						
+		</li>		
+	</ul>
+	<div class="container">
+		<h3>Toggeble Tabs</h3>	
+		<ul class="nav nav-tabs">
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#html">HTML</a></li>
+				<li class="nav-item">
+				<a class="nav-link active" data-toggle="tab" href="#css">CSS</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" data-toggle="tab" href="#js">JS</a>						
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" data-toggle="tab" href="#jquery">JQuery</a>						
+			</li>		
+		</ul>
+		<div class="tab-content">
+			<div id="html" class="container tab-pane active"><br>
+				<h3>HTML</h3>
+				<p>Hyper Text Markup Language, it contains Header, Body, Footer</p>
+			</div>
+			<div id="css" class="container tab-pane fade"><br>
+				<h3>CSS</h3>
+				<p>Hyper Text Markup Language, it contains Header, Body, Footer</p>
+			</div>
+			<div id="js" class="container tab-pane fade"><br>
+				<h3>JS</h3>
+				<p>Hyper Text Markup Language, it contains Header, Body, Footer</p>
+			</div>
+			<div id="jquery" class="container tab-pane fade"><br>
+				<h3>JQuery</h3>
+				<p>Hyper Text Markup Language, it contains Header, Body, Footer</p>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<h3>Toggeble Pills</h3>	
+		<ul class="nav nav-pills" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link" data-toggle="pill" href="#html1">HTML</a></li>
+				<li class="nav-item">
+				<a class="nav-link active" data-toggle="pill" href="#css1">CSS</a>
+				</li>
+				<li class="nav-item">
+				<a class="nav-link" data-toggle="pill" href="#js1">JS</a>						
+			</li>
+			<li class="nav-item">
+				<a class="nav-link disabled" data-toggle="pill" href="#jquery1">JQuery</a>						
+			</li>		
+		</ul>
+		<div class="tab-content">
+			<div id="html1" class="container tab-pane active"><br>
+				<h3>HTML</h3>
+				<p>Hyper Text Markup Language, it contains Header, Body, Footer</p>
+			</div>
+			<div id="css1" class="container tab-pane fade"><br>
+				<h3>CSS</h3>
+				<p>Hyper Text Markup Language, it contains Header, Body, Footer</p>
+			</div>
+			<div id="js1" class="container tab-pane fade"><br>
+				<h3>JS</h3>
+				<p>Hyper Text Markup Language, it contains Header, Body, Footer</p>
+			</div>
+			<div id="jquery1" class="container tab-pane fade"><br>
+				<h3>JQuery</h3>
+				<p>Hyper Text Markup Language, it contains Header, Body, Footer</p>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
